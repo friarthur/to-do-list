@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To do list</h1>
+        <form id="task-form">
+            <div class="form-group">
+                <label for="task-date">Data:</label>
+                <input type="date" id="task-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="task-time">Horário:</label>
+                <input type="time" id="task-time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="task-desc">Tarefa:</label>
+                <input type="text" id="task-desc" placeholder="Adicione uma tarefa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="task-status">Status:</label>
+                <select id="task-status" required>
+                    <option value="pendente">Pendente</option>
+                    <option value="em-progresso">Em Progresso</option>
+                    <option value="concluída">Concluída</option>
+                </select>
+            </div>
+            <button type="submit">Adicionar tarefa</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="/dist/script.js"></script>
+</body>
+</html>
